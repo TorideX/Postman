@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="Postman.Views.ResponseBodyPreviewUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Postman.Views"
+             mc:Ignorable="d">
+    <Grid>
+        <WebBrowser Name="web" IsEnabled="False" local:WebBrowserUtility.BindableSource="{Binding RequestUrl}" Height="300">
+
+        </WebBrowser>
+    </Grid>
+</UserControl>
